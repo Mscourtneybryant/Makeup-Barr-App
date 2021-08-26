@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Makeup Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="makeupbot.css">
+
+    
+
+    <script>
+        var sayings = {
+            "hello":"Hi! How can I help you today?",
+            "hi":"Hi! How can I help you today?",
+            "hey":"Hi! How can I help you today?",
+            "i need makeup advice":"Always remember the first step to great makeup is a clean canvas, meaning your face. Makeup is great! but if you aren't taking care of your skin it can cause makeup to look cakey when you apply it. What specifically would you like advice on?",
+            "how do i apply eyeliner?":"Draw your eyeliner along your upper lash line, as close to your lashes as possible, beginning at the inner corner of your eye. Don't stretch your skin too much, it can make the eyeliner messy and uneven when you release it. Next, draw a thin line in same direction on your lower lash line, but this time start in the middle of the lash line. If you're going for a classic look, you don't need to line the inner part of the lower lash line, but if you are going for the rocker chick look, then, by all means, lather it on.",
+            "what goes on first concealer or foundation?":"Definitely layer your foundation before applying concealer. If you have primer then make sure to apply that before your foundation.",
+            "makeup tips?":"Spoolies are great for maintaing eyebrows. If you struggle with applying eyeliner try using a plastic spoon as a stencil. Plastic spoons can also double as a mascara shield too. ;-) ",
+            "thank you!":"You're Welcome!",
+            "thank you":"You're Welcome!",
+        };
+        function chat() {
+             var user =document.getElementById("chatBox").value;
+             document.getElementById("chatLog").innerHTML +=user+"<br>";
+            if(user in sayings){
+                document.getElementById("chatLog").innerHTML += sayings[user]+"<br>";
+            } else{
+                document.getElementById("chatLog").innerHTML+="I'm not sure. I'm still learning. Why don't you try asking me something else? <br>";}}
+    </script>
+</head>
+<body>
+    <center><nav><a href="makeupbar.html">Home</a> | <a href="makeup.html">Tutorials</a>| <a href="makeupform.html">Quizzes</a>| <a href="makeupform.html">Contact Us</a> </nav></center>
+<h1 id="chatLog">Hello, I am Your Personal Virtual Makeup Assistant!<br></h1>
+<div style="text-align: center;"><input id="chatBox" type="text" onkeydown="if(event.keyCode == 13){chat()}"></div>
+<h2>Ask me some makeup questions and I will do my best to assist!<br>
+</h2>
+
+
+<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F50057" fill-opacity="1" d="M0,0L1440,224L1440,320L0,320Z"></path></svg></div>
+</body>
+</html>

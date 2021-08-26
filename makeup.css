@@ -1,0 +1,141 @@
+body{
+
+    background-color: black;
+    font-size: 14px;
+    color: #F50057;
+    font-family: 'Times New Roman',; 
+    text-shadow: 0 0 30px;
+
+
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  article{
+    padding: 0.1em;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .grid {
+    overflow: hidden;
+    padding: 0.5em 0 0 0.5em;
+    max-width: 76em;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+
+  
+  .grid li {
+    padding: 0 1.5em 0.5em 1.5em;
+  }
+  
+  .grid li > div {
+    padding: 1em 1em;
+  }
+  
+  @media all and (min-width: 27em) {
+    .grid li {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  @media all and (min-width: 40em) {
+    .grid li {
+      width: 33.3333333333333333%;
+    }
+    .grid li.wide {
+      width: 66.66666666666666%;
+    }
+  }
+  
+  @media all and (min-width: 60em) {
+    .grid li {
+      width: 25%;
+    }
+    .grid li.wide {
+      width: 50%;
+    }
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: pink;
+  }
+  
+  .cont:hover .overlay {
+    opacity: .5;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cont {
+    position: relative;
+    width: 200px;
+    color: #444;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+      color: pink;
+  }
+
+
+  .divider {								
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 75%; 						
+    margin: 40px auto;				
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							
+    -moz-background-size: 100% 2px; 	
+    background-size: 100% 2px; 			
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(pink), to(#F50057));
+    background-image: -webkit-linear-gradient(180deg, pink, #F50057);
+    background-image: -moz-linear-gradient(180deg, pink, #F50057);
+    background-image: -o-linear-gradient(180deg, pink, #F50057);
+    background-image: linear-gradient(90deg, pink, #F50057);
+}
+.divider span:nth-child(2) {
+    color: #F50057; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F50057), to(pink));
+    background-image: -webkit-linear-gradient(180deg, #F50057, pink);
+    background-image: -moz-linear-gradient(180deg, #F50057, pink);
+    background-image: -o-linear-gradient(180deg, #F50057, pink);
+    background-image: linear-gradient(90deg, #F50057, pink);
+}
+
+div.rect{
+    background: linear-gradient(45deg, #535353, rgb(197, 197, 197));
+    color: black;
+}

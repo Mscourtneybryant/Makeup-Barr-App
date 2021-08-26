@@ -1,0 +1,19 @@
+#chatLog{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #F50057;
+    text-shadow: 0 0 20px;
+    font-family: 'times new roman';
+}
+
+body{
+    background-color: black;
+    color: pink;
+}
+
+div{
+    border-color:#F50057;
+}
+

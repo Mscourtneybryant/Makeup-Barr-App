@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: pink
+}
+
+section{ 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(MakeupLG.png);
+    background-size: cover;
+    background-position: fixed;
+    filter: blur(2px) brightness(30%);
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+	font-size: 20px;
+	font-family: 'tahoma';
+	color: #F50057;
+  font-weight: 300;
+  text-align: center;
+  background-color: black;
+}
+
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;;
+  color: pink;
+}
+
+button{
+  font-family:  'sans-serif';
+	font-size: 22px;
+	background-color: #F50057;
+	color: black;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color:pink;
+}
+
+.container{
+    width: 360px;
+    background: #000;
+    box-shadow: 0 0 8px #F50057;
+    opacity: 0.6;
+}
+
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+form h1{
+    padding: 10px 0;
+}
+
+form .id{
+    position: relative;
+}
+
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid #F50057;
+    border-radius: 3px;
+    background: white;
+    padding: 0 15px;
+    padding-right: 45px;
+    font-size: 20px;
+}
+
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #F50057;
+    border-radius: 3px;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 0;
+}
+
+form input:focus,
+form textarea:focus{
+    border: 1px solid #F50057;
+    color: pink;
+    transition: all 0.3s ease;
+}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    padding-left: 4px;
+    color: #F50057;
+    transition: all 0.3s ease;
+}
+
+#container{
+    border: solid #F50057;
+}
+
+#div{
+    color:white;
+}
